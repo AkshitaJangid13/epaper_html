@@ -128,9 +128,7 @@
 #Subheader {
     display: none;
 }
-.subheader-paper{
-    display: none;
-}
+
 #subheaderbtn2 h6,
 #subheader-paper2 h6{
     font-size: small;
@@ -155,9 +153,9 @@
 }
 #subheader-paper4 .photo-div,
 #subheader-paper5 .photo-div{
-    height: 50px;
+    /* height: 50px;
     z-index: 100;
-    position: relative;
+    position: relative; */
 }
 /* headerfooter */
 #headerfooter{
