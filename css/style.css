@@ -76,49 +76,7 @@
     background-color: saddlebrown;
     color: white;
 }
-/* #header{
-    display: none;
-}
-#header-paper .header-paper{
-    display: none;
-}
-#header-paper4 input,
-#header-paper5 input,textarea,
-#header-paper6 input,
-textarea,
-#header-paper7 input,
-textarea,
-#header-paper8 input,
-#header-paper9 input,
-#header-paper10 input,
-#header-paper11 input,
-#header-paper12 input{
-    border: none;
-    outline: none;
-    color: #000000;
-    font-weight: 700 ;
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-}
-#textarea textarea{
-    font-size: small;
-    background-color: transparent;
-}
-#header-paper5 .photo-div{
-    height: 170px;
-}
-#header-paper6 .photo-div {
-    height: 170px;
-}
-#page_num input{
-    width: 80%;
-    text-align: left;
-}
-#header-paper11 .photo-div,
-#header-paper12 .photo-div{
-    height: 130px;
-} */
+
 /* 2nd header */
 #secondheader{
     display: none;
@@ -153,15 +111,15 @@ textarea,
     margin-top: -4px;
 }
 .secondheaderCol{
-    display: none;
+    /* display: none; */
 }
 #secondheaderpaper input{
-    border: none;
+    /* border: none;
     outline: none;
     color: #000000;
     font-weight: 700;
     width: 100%;
-    background-color: transparent;
+    background-color: transparent; */
 }
 #secondheader-paper10 .col-2{
     width: 11%;
