@@ -197,16 +197,13 @@
 }
 /* layout */
 #layout1Heading{
-    background-image: linear-gradient(white,rgb(246, 246, 142));
-    border: 1px solid black;
+    
 }
 #layout1Heading textarea{
     color: rgb(16, 16, 157);
     resize: none    ;
 }
 #layout1Heading h3{
-    border-right: 5px solid rgb(255, 23, 62);
-    border-left: 5px solid rgb(255, 23, 62);
 }
 #layoutrow1 .col-3 textarea{
     font-size: 8px;
