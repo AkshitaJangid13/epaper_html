@@ -184,16 +184,16 @@
     display: none;
 }
 #headerfooter-paper{
-    position: sticky;
-    top: 710px;
+    /* position: sticky;
+    top: 710px; */
 }
 #headerfooter-paper input, textarea{
-    border: none;
+    /* border: none;
     outline: none;
     color: #000000;
     width: 100%;
     background-color: transparent;
-    font-size: small;
+    font-size: small; */
 }
 /* layout */
 #layout1Heading{

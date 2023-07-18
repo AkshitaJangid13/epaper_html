@@ -20,7 +20,7 @@
 <div >
     <section id="main_section">
         <div id="paper-design">
-            <div id="paper-new" style="    height: 943px;max-width: 700px;margin: auto; background-color: white;">
+            <div id="paper-new" style="height: 943px;max-width: 700px;margin: auto; background-color: white;">
                 <div id="header-footer-paper" style="display: block;">
                     <div id="header-paper" style="width: 100%; padding: 0px;">
                         <div  id="header-paper1" style="display: none;width: 100%; padding: 0px;">
@@ -668,7 +668,7 @@
                                     <h6 style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></h6>
                                 </div>
                                 <div style="width: 33.33%;">
-                                    <h6 style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" class="text-center" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></h6>
+                                    <h6 style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></h6>
                                 </div>
                                 <div style="width: 33.33%;">
                                     <h6 style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></h6>
@@ -1239,130 +1239,112 @@
                     </div>
                 </div>
 
-                <div class="row my-1" id="headerfooter-paper">
-                    <div class="col-12 headerfootercol" id="headerfooter-paper1">
-                        <div class="row align-items-center border-black">
-                            <div class="col-2 d-flex px-0 justify-content-end">
-                                <i class="bi bi-circle-fill" id="bluedot"></i>
-                                <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                <i class="bi bi-circle-fill" id="yellowdot"></i>
+                <div id="headerfooter-paper" style="position: sticky;top: 710px;">
+                    <div id="headerfooter-paper1" style="width: 100%; display: none;">
+                        <div style="display: flex; align-items: center;">
+                            <div style="width: 9%; display: flex;">
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
                                 <i class="bi bi-circle-fill" ></i>
                             </div>
-                            <div class="col-8 border-bottom border-secondary border-5 px-0"></div>
-                            <div class="col-2 d-flex px-0">
-                                <i class="bi bi-circle-fill" id="bluedot"></i>
-                                <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                <i class="bi bi-circle-fill" id="yellowdot"></i>
+                            <div style="width: 82%;border: 2px solid grey;"></div>
+                            <div style="width: 9%; display: flex;">
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
                                 <i class="bi bi-circle-fill" ></i>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 headerfootercol" id="headerfooter-paper2">
-                        <div class="row align-items-center " >
-                            <div class="col-12">
-                                <div class="row my-2" id="yellowbg">
-                                    <div class="col-2 d-flex px-0 ">
-                                        <i class="bi bi-circle-fill" id="bluedot"></i>
-                                        <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                        <i class="bi bi-circle-fill" id="yellowdot"></i>
-                                        <i class="bi bi-circle-fill" ></i>
-                                    </div>
-                                </div>
+                    <div id="headerfooter-paper2" style="width: 100%; display: none;">
+                        <div style="width: 100%; background-color: rgb(241, 214, 137)" >
+                            <div style="width: 13%; padding-left: 2px;">
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
+                                <i class="bi bi-circle-fill" ></i>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 headerfootercol" id="headerfooter-paper3">
-                        <div class="row align-items-center ">
-                            <div class="col-12 border-black border " id="smallfooterline">
-                                <p class="mb-0 p-1">
-                                    <textarea name="" id="" class="mb-0 text-center" cols="30" rows="3" maxlength="250" placeholder="Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur sint fugiat expedita, molestiae maiores quaerat labore consectetur nobis vel eligendi? Numquam nobis "></textarea>
-                                </p>
+                    <div id="headerfooter-paper3" style="width: 100%; display: none;">
+                        <div style="width: 100%;border: 1px solid black;font-size: small;">
+                            <p style="margin-bottom: 0;">
+                                <textarea name="" id="" style="border: none; outline: none;width: 100%;background-color: transparent;font-size: small; text-align: center;" cols="30" rows="3" maxlength="250" placeholder="Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur sint fugiat expedita, molestiae maiores quaerat labore consectetur nobis vel eligendi? Numquam nobis "></textarea>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="headerfooter-paper4" style="width: 100%; display: none;">
+                        <div style="display: flex; background-color: pink;">
+                            <div style="display: flex; width: 25%;" >
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
+                                <i class="bi bi-circle-fill" ></i>
+                            </div>
+                            <div style="display: flex; width: 25%;">
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
+                                <i class="bi bi-circle-fill" ></i>
+                            </div>
+                            <div style="display: flex; width: 25%;">
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
+                                <i class="bi bi-circle-fill" ></i>
+                            </div>
+                            <div style="display: flex; width: 25%; justify-content: end;" >
+                                <i class="bi bi-circle-fill" style=" color: teal;"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(247, 10, 49);"></i>
+                                <i class="bi bi-circle-fill" style="color: rgb(255, 196, 0);"></i>
+                                <i class="bi bi-circle-fill" ></i>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 headerfootercol" id="headerfooter-paper4">
-                        <div class="row align-items-center ">
-                            <div class="col-12">
-                                <div class="row" id="pinkbg">
-                                    <div class="col-3 d-flex justify-content-start">
-                                        <i class="bi bi-circle-fill" id="bluedot"></i>
-                                        <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                        <i class="bi bi-circle-fill" id="yellowdot"></i>
-                                        <i class="bi bi-circle-fill" ></i>
-                                    </div>
-                                    <div class="col-3">
-                                        <i class="bi bi-circle-fill" id="bluedot"></i>
-                                        <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                        <i class="bi bi-circle-fill" id="yellowdot"></i>
-                                        <i class="bi bi-circle-fill" ></i>
-                                    </div>
-                                    <div class="col-3">
-                                        <i class="bi bi-circle-fill" id="bluedot"></i>
-                                        <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                        <i class="bi bi-circle-fill" id="yellowdot"></i>
-                                        <i class="bi bi-circle-fill" ></i>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end">
-                                        <i class="bi bi-circle-fill" id="bluedot"></i>
-                                        <i class="bi bi-circle-fill" id="pinkdot"></i>
-                                        <i class="bi bi-circle-fill" id="yellowdot"></i>
-                                        <i class="bi bi-circle-fill" ></i>
-                                    </div>
-                                </div>
+                    <div id="headerfooter-paper5" style="width: 100%; display: none;">
+                        <div style="display: flex; background-color: pink;">
+                            <div style="display: flex; width: 25%;" >
+                                <span class="material-symbols-outlined" style=" color: teal;">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(247, 10, 49);">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 196, 0);">crop_16_9</span>
+                                <span class="material-symbols-outlined">crop_16_9</span>
+                            </div>
+                            <div style="display: flex; width: 25%;">
+                                <span class="material-symbols-outlined" style=" color: teal;">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(247, 10, 49);">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 196, 0);">crop_16_9</span>
+                                <span class="material-symbols-outlined">crop_16_9</span>
+                            </div>
+                            <div style="display: flex; width: 25%;">
+                                <span class="material-symbols-outlined" style=" color: teal;">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(247, 10, 49);">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 196, 0);">crop_16_9</span>
+                                <span class="material-symbols-outlined">crop_16_9</span>
+                            </div>
+                            <div style="display: flex; width: 25%; justify-content: end;" >
+                                <span class="material-symbols-outlined" style=" color: teal;">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(247, 10, 49);">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 196, 0);">crop_16_9</span>
+                                <span class="material-symbols-outlined">crop_16_9</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 headerfootercol" id="headerfooter-paper5">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="row" id="pinkbg">
-                                    <div class="col-3 d-flex justify-content-start">
-                                        <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined">crop_16_9</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined">crop_16_9</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined">crop_16_9</span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end">
-                                        <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined">crop_16_9</span>
-                                    </div>
-                                </div>
+                    <div id="headerfooter-paper6" style="width: 100%; display: none;">
+                        <div style="display: flex; background-color: pink;">
+                            <div style="width: 75%;">
+                                <p style="margin-bottom: 0;"><input type="text" style="border: none; outline: none;width: 100%;background-color: transparent;font-size: small;" placeholder="Channel name"> </p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 headerfootercol" id="headerfooter-paper6">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="row" id="pinkbg">
-                                    <div class="col-9 ">
-                                        <p class="mb-0 text-start"><input type="text" placeholder="Channel name"> </p>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end">
-                                        <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
-                                        <span class="material-symbols-outlined">crop_16_9</span>
-                                    </div>
-                                </div>
+                            <div style="display: flex; width: 25%; justify-content: end;" >
+                                <span class="material-symbols-outlined" style=" color: teal;">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(247, 10, 49);">crop_16_9</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 196, 0);">crop_16_9</span>
+                                <span class="material-symbols-outlined">crop_16_9</span>
                             </div>
                         </div>
                     </div>
