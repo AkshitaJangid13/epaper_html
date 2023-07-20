@@ -2192,16 +2192,94 @@
 
                     <div id="newRow">
                         <div class="col-12" id="newrow1" onclick="shownewrow(1)">
-                            <div class="p-1 m-1 border border-3 row align-items-center border-black shadow mb-3 bg-body-tertiary ">
-                                <div class="col-12 bg-black text-black">q</div>
+                            <div style="padding: 2px; margin: 2px;border: 2px solid black; ">
+                                <div style="width: 100%; padding: 0 3px;background-image: linear-gradient(white,rgb(246, 246, 142));border: 1px solid black;" >
+                                <h5 style="border-right: 5px solid rgb(255, 23, 62); border-left: 5px solid rgb(255, 23, 62); margin-bottom: 0px; margin: 2px 0;"><textarea name="" id="" style="width: 100%;text-align: center; background-color: transparent; border: none; outline: none;resize: none;" cols="30" rows="2" placeholder="HEADER"></textarea></h5>
+                            </div>
+                            <div style="display: flex;">                         
+                                <div style="width: 25%;">
+                                    <textarea name="" style="border: none; outline: none; font-size:10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea>
+                                </div>
+                                <div style="width: 25%;">
+                                    <div style="display: flex; width: 100%;">
+                                        <div style="width: 50%;">
+                                            <textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea>
+                                        </div>
+                                        <div style="width: 50%;">
+                                            <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; width: 100%;">
+                                        <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                            <label for="file-input16" id="label16" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                            <img id="preview-image16" src="" alt="logo">
+                                        </div>
+                                        <input id="file-input16" type="file" style="display: none;" onchange="previewPhoto('file-input16', 'preview-image16', 'label16')">  
+                                    </div>
+                                    <div style="display: flex; width: 100%;">
+                                        <div style="width: 50%;">
+                                            <textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="8" placeholder="hey"></textarea>
+                                        </div>
+                                        <div style="width: 50%;">
+                                            <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="8" placeholder="hey"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 25%;">
+                                    <textarea name="" id="" cols="30" rows="20" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                </div>
+                                <div style="width: 25%;">
+                                    <textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="20" placeholder="hey"></textarea>
+                                </div>
+                            </div>
                             </div>
                         </div>
 
                         <div class="col-12" id="newrow2" onclick="shownewrow(2)">
-                            <div class="p-1 m-1 border border-3 row align-items-center border-black shadow mb-3 bg-body-tertiary ">
-                                <div class="col-12 d-flex px-0">
-                                    <div class="row bg-black mx-1 text-black w-75">q</div>
-                                    <div class="row bg-black mx-1 text-black w-25">q</div>
+                            <div style="padding: 2px; margin: 2px;border: 2px solid black; ">
+                                <div style="display: flex;" >
+                                    <div style="width: 60%;">
+                                        <div style="width: 100%;">
+                                            <h5 ><textarea name="" id="" style="border: none; outline: none;  text-align: center;width: 100%;" cols="30" rows="2" placeholder="HEADER"></textarea>
+                                            </h5>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div style="width: 70%;">
+                                                    <div style="width: 100%;display: flex;">
+                                                        <textarea name="" id="" cols="30" rows="5" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                                        <textarea name="" id="" cols="30" rows="5" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                                    </div>
+                                                    <div style="width: 100%;display: flex;">
+                                                        <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                            <label for="file-input17" id="label17" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                                            <img id="preview-image17" src="" alt="logo">
+                                                        </div>
+                                                        <input id="file-input17" type="file" style="display: none;" onchange="previewPhoto('file-input17', 'preview-image17', 'label17')">  
+                                                    </div>
+                                                    <div style="width: 100%;display: flex;">
+                                                        <textarea name="" id="" cols="30" rows="5" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                                        <textarea name="" id="" cols="30" rows="5" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                                    </div>
+                                            </div>
+                                            <div style="width: 30%;">
+                                                <textarea name="" id="" cols="30" rows="17" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 40%;">
+                                        <div style="width: 100%;">
+                                            <h5><textarea name="" id="" cols="30" style="border: none; outline: none; text-align: center;width: 100%;" rows="2" placeholder="HEADER"></textarea>
+                                            </h5>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div style="width: 50%;">
+                                                <textarea name="" id="" cols="30" rows="17" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>              
+                                            </div>
+                                            <div style="width: 50%;">
+                                                <textarea name="" id="" cols="30" rows="17" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
