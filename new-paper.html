@@ -18,6 +18,7 @@
 </head>
 <body style="background-color: rgb(215 215 116 / 34%);">
 <div >
+    <!--with inline css white page with display none content which display block when clicked on below repective button  -->
     <section id="main_section">
         <div id="paper-design">
             <div id="paper-new" style="height: 943px;max-width: 700px;margin: auto; background-color: white;">
@@ -678,7 +679,7 @@
                     </div>
                 </div>
 
-                <div id="layout-paper">
+                <div id="layout-paper" style="width: 100%; padding: 0px;">
                     <div class=" layout-paper">
                         <div id="layoutrow1" style="width: 100%; display: none;">
                             <div style="width: 100%; padding: 0 3px;background-image: linear-gradient(white,rgb(246, 246, 142));border: 1px solid black;" >
@@ -982,201 +983,175 @@
                             </div>
                         </div>
 
-                        <div  id="layoutrow6">
+                        <div  id="layoutrow6" style="width: 100%; display: none;">
                             <div >
                                 <div style="width: 100%; background-color: yellow; border: 2px solid black;">
-                                    <h6 class="mb-0 p-1"><textarea name="" id="" cols="30" rows="2" placeholder="HEADER"></textarea></h6>
+                                    <h6 ><textarea name="" style="background-color: transparent;border: none; outline: none;  text-align: center;width: 100%;" id="" cols="30" rows="2" placeholder="HEADER"></textarea></h6>
                                 </div>
-                                <div class="col-3 px-1">
-                                    <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
-                                </div>
-                                <div class="col-4 p-0">
-                                    <div class="row p-0 m-0">
-                                        <div class="col-12 d-flex  p-0 m-0 justify-content-evenly ">
-                                            <div class="row  p-0 m-0">
-                                                <div class="col-12 p-0 m-0">
-                                                    <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                <div style="display: flex;">
+                                    <div style="width: 25%;padding: 1px;">
+                                        <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                    </div>
+                                    <div style="width: 40%;padding: 1px;">
+                                        <div class="row p-0 m-0">
+                                            <div style="display: flex;">
+                                                <div style="width: 50%; padding: 1px;">
+                                                    <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                </div>
+                                                <div style="width: 50%; padding: 1px;">
+                                                    <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
                                                 </div>
                                             </div>
-                                            <div class="row  p-0 m-0">
-                                                <div class="col-12 p-0 m-0">
-                                                    <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                            <div style="width: 100%;">
+                                                <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                    <label for="file-input25" id="label25" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                                    <img id="preview-image25" src="" alt="logo">
                                                 </div>
+                                                <input id="file-input25" type="file" style="display: none;" onchange="previewPhoto('file-input25', 'preview-image25', 'label25')">  
                                             </div>
-                                        </div>
-                                        <div class="col-12 d-flex  p-0 m-0">
-                                            <div class="photo-div" >
-                                                <label for="file-input25" id="label25" class="btn btn-primary">Photo</label>
-                                                <img id="preview-image25" src="" alt="logo">
-                                            </div>
-                                            <input id="file-input25" type="file" style="display: none;" onchange="previewPhoto('file-input25', 'preview-image25', 'label25')">  
-                                        </div>
-                                        <div class="col-12 d-flex  p-0 m-0 justify-content-evenly ">
-                                            <div class="row  p-0 m-0">
-                                                <div class="col-12  p-0 m-0">
-                                                    <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                            <div style="display: flex;">
+                                                <div style="width: 50%; padding: 1px;">
+                                                    <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
                                                 </div>
-                                            </div>
-                                            <div class="row  p-0 m-0">
-                                                <div class="col-12 p-0 m-0">
-                                                    <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                <div style="width: 50%; padding: 1px;">
+                                                    <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-2 p-0">
-                                    <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
-                                </div>
-                                <div class="col-3 p-0">
-                                    <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                    <div style="width: 10%;padding: 1px;">
+                                        <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                    </div>
+                                    <div style="width: 25%;padding: 1px;">
+                                        <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12 layoutpaperCol" id="layoutrow7">
-                            <div class="row" >
-                                <div class="col-7">
-                                    <div class="row"> 
-                                        <div class="col-12 p-1">
-                                            <h5 class="mb-0 p-1"><textarea name="" id="" cols="30" rows="2" placeholder="HEADER"></textarea>
+                        <div id="layoutrow7"  style="width: 100%; display: none;">
+                            <div  style="display: flex;">
+                                <div style="width: 60%;">
+                                    <div > 
+                                        <div style="width: 100%;">
+                                            <h5 ><textarea name=""  style="background-color: transparent;border: none; outline: none;  text-align: center;width: 100%;"  id="" cols="30" rows="2" placeholder="HEADER"></textarea>
                                             </h5>
                                         </div>
-                                        <div class="col-8 p-0">
-                                            <div class="row p-0 m-0">
-                                                <div class="col-12 d-flex  p-0 m-0">
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                        <div style="display: flex;">
+                                            <div  style="width: 70%; padding: 2px;">
+                                                <div>
+                                                    <div style="display: flex;">
+                                                        <div style="width: 50%; padding: 1px;">
+                                                            <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                        </div>
+                                                        <div style="width: 50%; padding: 1px;">
+                                                            <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
                                                         </div>
                                                     </div>
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                    <div  style="width: 100%; display: flex; padding: 2px;">
+                                                        <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                            <label for="file-input26" id="label26" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                                            <img id="preview-image26" src="" alt="logo">
                                                         </div>
+                                                        <input id="file-input26" type="file" style="display: none;" onchange="previewPhoto('file-input26', 'preview-image26', 'label26')">  
                                                     </div>
-                                                </div>
-                                                <div class="col-12 d-flex  p-0 m-0">
-                                                    <div class="photo-div" >
-                                                        <label for="file-input26" id="label26" class="btn btn-primary">Photo</label>
-                                                        <img id="preview-image26" src="" alt="logo">
-                                                    </div>
-                                                    <input id="file-input26" type="file" style="display: none;" onchange="previewPhoto('file-input26', 'preview-image26', 'label26')">  
-                                                </div>
-                                                <div class="col-12 d-flex  p-0 m-0">
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12  p-0 m-0">
-                                                            <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                    <div  style="display: flex;">
+                                                        <div style="width: 50%; padding:2px;">
+                                                            <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea></span>
                                                         </div>
-                                                    </div>
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <span><textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea></span>
+                                                        <div style="width: 50%; padding:2px;">
+                                                            <span><textarea name="" id="" cols="30" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" rows="5" placeholder="hey"></textarea></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-4 p-0">
-                                            <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                            <div style="width: 30%; padding: 2px;">
+                                                <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-5 ">
-                                    <div class="row">
-                                        <div class="col-12">                                                    
-                                            <div class="row ">
-                                                <div class="col-12 p-1">
-                                                    <h6 class="mb-0 p-1"><textarea name="" id="" cols="30" rows="2" placeholder="HEADER"></textarea>
-                                                    </h6>
-                                                </div>
-                                                <div class="col-12 p-0">
-                                                    <div class="photo-div" >
-                                                        <label for="file-input27" id="label27" class="btn btn-primary">Photo</label>
-                                                        <img id="preview-image27" src="" alt="logo">
-                                                    </div>
-                                                    <input id="file-input27" type="file" style="display: none;" onchange="previewPhoto('file-input27', 'preview-image27', 'label27')">
-                                                </div>
-                                                <div class="col-12 p-0">
-                                                    <span><textarea name="" id="" cols="30" rows="9" placeholder="hey"></textarea></span>
-                                                </div>
-                                            </div>
+                                <div style="width: 40%; display: flex;">
+                                    <div style="width: 50%;padding: 2px;">
+                                        <div style="width: 100%;">
+                                            <h6 ><textarea name=""  style="background-color: transparent;border: none; outline: none;  text-align: center;width: 100%;"  id="" cols="30" rows="2" placeholder="HEADER"></textarea>
+                                            </h6>
                                         </div>
-                                        <div class="col-12">                                                    
-                                            <div class="row ">
-                                                <div class="col-12 p-1">
-                                                    <h6 class="mb-0 p-1"><textarea name="" id="" cols="30" rows="2" placeholder="HEADER"></textarea>
-                                                    </h6>
-                                                </div>
-                                                <div class="col-6 p-0">
-                                                    <div class="photo-div" >
-                                                        <label for="file-input28" id="label28" class="btn btn-primary">Photo</label>
-                                                        <img id="preview-image28" src="" alt="logo">
-                                                    </div>
-                                                    <input id="file-input28" type="file" style="display: none;" onchange="previewPhoto('file-input28', 'preview-image28', 'label28')">
-                                                </div>
-                                                <div class="col-6 p-0">
-                                                    </span><textarea name="" id="" cols="30" rows="9" placeholder="hey"></textarea></span>
-                                                </div>
+                                        <div style="width: 100%;">
+                                            <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                <label for="file-input27" id="label27" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                                <img id="preview-image27" src="" alt="logo">
                                             </div>
+                                            <input id="file-input27" type="file" style="display: none;" onchange="previewPhoto('file-input27', 'preview-image27', 'label27')">
+                                        </div>
+                                        <div style="width: 100%;">
+                                            <span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="9" placeholder="hey"></textarea></span>
+                                        </div>
+                                    </div>                                                    
+                                    <div style="width: 50%;padding: 2px;">
+                                        <div style="width: 100%;">
+                                            <h6 ><textarea name=""  style="background-color: transparent;border: none; outline: none;  text-align: center;width: 100%;"  id="" cols="30" rows="2" placeholder="HEADER"></textarea>
+                                            </h6>
+                                        </div>
+                                        <div style="width: 100%;">
+                                            <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                <label for="file-input28" id="label28" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
+                                                <img id="preview-image28" src="" alt="logo">
+                                            </div>
+                                            <input id="file-input28" type="file" style="display: none;" onchange="previewPhoto('file-input28', 'preview-image28', 'label28')">
+                                        </div>
+                                        <div style="width: 100%;">
+                                            </span><textarea name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="9" placeholder="hey"></textarea></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12 layoutpaperCol" id="layoutrow8">
-                            <div class="row">
-                                <div class="col-9">
-                                    <div class="row" >
-                                        <div class="col-12 mb-2 p-1">
-                                            <h6 class="mb-0 p-1"><textarea name="" id="" cols="30" rows="2" placeholder="HEADER"></textarea></h6>
+                        <div id="layoutrow8" style="width: 100%; display: none;">
+                            <div style="display: flex ;">
+                                <div style="width: 75%;">
+                                    <div >
+                                        <div style="width: 100%;">
+                                            <h6 ><textarea name="" style="background-color: transparent;border: none; outline: none;  text-align: center;width: 100%;" id="" cols="30" rows="2" placeholder="HEADER"></textarea></h6>
                                         </div>
-                                        <div class="col-3 px-1">
-                                            <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
-                                        </div>
-                                        <div class="col-6 p-0">
-                                            <div class="row p-0 m-0">
-                                                <div class="col-12 d-flex  p-0 m-0 justify-content-evenly ">
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea>
-                                                        </div>
+                                        <div style="display: flex;">
+                                            <div style="width: 25%;">
+                                                <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                            </div>
+                                            <div style="width: 50%;">
+                                                <div style="display: flex;">
+                                                    <div style="width: 50%;">
+                                                        <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
                                                     </div>
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea>
-                                                        </div>
+                                                    <div style="width: 50%;">
+                                                        <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 d-flex  p-0 m-0">
-                                                    <div class="photo-div" >
-                                                        <label for="file-input22" id="label22" class="btn btn-primary">Photo</label>
+                                                <div style="width: 100%;">
+                                                    <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+                                                        <label for="file-input22" id="label22"  style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
                                                         <img id="preview-image22" src="" alt="logo">
                                                     </div>
                                                     <input id="file-input22" type="file" style="display: none;" onchange="previewPhoto('file-input22', 'preview-image22', 'label22')">  
                                                 </div>
-                                                <div class="col-12 d-flex  p-0 m-0 justify-content-evenly ">
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12  p-0 m-0">
-                                                            <textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea>
-                                                        </div>
+                                                <div style="display: flex;">
+                                                    <div style="width: 50%;">
+                                                        <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
                                                     </div>
-                                                    <div class="row  p-0 m-0">
-                                                        <div class="col-12 p-0 m-0">
-                                                            <textarea name="" id="" cols="30" rows="5" placeholder="hey"></textarea>
-                                                        </div>
+                                                    <div style="width: 50%;">
+                                                        <textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-3 p-0">
-                                            <span><textarea name="" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                            <div style="width: 25%;">
+                                                <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-3">
-                                    <span><textarea name="" id="" cols="30" rows="28" placeholder="hey"></textarea></span>
+                                <div style="width: 35%;">
+                                    <span><textarea name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="28" placeholder="hey"></textarea></span>
                                 </div>
                             </div>
                         </div>
@@ -1314,6 +1289,7 @@
         </div>
     </section>
 
+    <!--row 1 toggle buttons with header&footes , layout , font, size buttons -->
     <section id="content-functions">
         <div class="container ">
             <div class="row ">
@@ -1330,6 +1306,7 @@
         </div>
     </section>
 
+    <!-- header&footer button toggles this card with 4 other sections of header, second header, subheader and footer -->
     <section id="card_section2">
         <div class="container my-2" id="headerandfooter">
             <div class="row" >
@@ -1345,6 +1322,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- header button card on click of nay btn below the above content on white page will be display block -->
                         <div class="card-body" id="header">
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-center" >
@@ -1646,7 +1624,7 @@
                                 </div>
                             </div>
                         </div> 
-                        
+                            <!-- secind headeer btns -->
                         <div class="card-body" id="secondheader">
                             <div class="row" >
                                 <div class="col-12 d-flex justify-content-center" >
@@ -1880,7 +1858,7 @@
 
                             </div>
                         </div> 
-
+                        <!-- subheader buttons -->
                         <div class="card-body" id="Subheader">
                             <div class="row" >
                                 <div class="col-12 d-flex justify-content-center" >
@@ -2029,7 +2007,7 @@
 
                             </div>
                         </div> 
-
+                        <!-- footer buttons -->
                         <div class="card-body" id="headerfooter">
                             <div class="row" >
                                 <div class="col-12 d-flex justify-content-center" >
@@ -2152,6 +2130,7 @@
         </div>
     </section>
 
+    <!-- layout section where onclick of any btn their respective div will display block on white page -->
     <section id="card_section3">
         <div class="container my-2" id="layout">
             <div class="card card-body">
@@ -2322,6 +2301,7 @@
         </div>
     </section>
 
+    <!-- font changing div with no js fucntionality -->
     <section id="card_section4">
         <div class="container my-2" id="font">
             <div class="card card-body">
@@ -2483,6 +2463,7 @@
         </div>
     </section>
 
+    <!-- size div where js functionallity changes the size of white page -->
     <section id="card_section5">
         <div class="container my-2" id="fontSize">
             <div class="card card-body ">
@@ -2510,6 +2491,7 @@
         </div>
     </section>
 
+    <!-- save, export, and home btn -->
     <section id="paper-btns" class="d-flex justify-content-end " >
         <div id="outer-btn">
             <div class="row">
