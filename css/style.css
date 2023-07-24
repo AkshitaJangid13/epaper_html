@@ -204,11 +204,9 @@
     background-color: #bebebe;
 }
 
-#font{
-    max-width: 700px;
-}
+
 .lightyellow{
-    background-color:#ebceafa6 !important;
+    
 }
 .scrollable-row-font {
     overflow-x: scroll;
@@ -288,4 +286,7 @@
     .scrollable-row::-webkit-scrollbar-track {
         background-color: #f1f1f1;
     }
+        #font {
+            max-width: 375px!important;
+        }
 }
