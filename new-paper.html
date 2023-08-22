@@ -679,7 +679,7 @@
                     </div>
                 </div>
 
-                <div id="layout-paper" style="width: 100%; padding: 0px;">
+                <div id="layout-paper" style="width: 100%; padding: 0px; overflow: hidden; height: 900px;">
                     <div class=" layout-paper">
                         <div id="layoutrow1" style="width: 100%; display: none;">
                             <div style="width: 100%;background-image: linear-gradient(white,rgb(246, 246, 142));border: 1px solid black;" >
@@ -2956,13 +2956,29 @@ function showfooter(index) {
   }
 }
 
+// function shownewrow(index) {
+//   for (let i = 1; i <=8; i++) {
+//     let element = document.getElementById('layoutrow' + i);
+//     element.style.display = "block";
+//     if (element) {
+//       element.style.display = (i === index) ? 'block' : 'none';
+//     }
+//   }
+// }
+
+// Initialize an array to keep track of displayed rows
+const displayedRows = [];
+
 function shownewrow(index) {
-  for (let i = 1; i <=8; i++) {
-    let element = document.getElementById('layoutrow' + i);
-    element.style.display = "block";
-    if (element) {
-      element.style.display = (i === index) ? 'block' : 'none';
-    }
+  let element = document.getElementById('layoutrow' + index);
+
+  // Check if the row is not already displayed
+  if (!displayedRows.includes(index)) {
+    // Display the row
+    element.style.display = 'block';
+    
+    // Add the index to the displayedRows array
+    displayedRows.push(index);
   }
 }
 
@@ -2981,28 +2997,17 @@ function shownewrow(index) {
       }
     }
     // textarea increement
-
-    // const textarea = document.getElementById('suvichar1');
-    // // const textarea = document.getElementsByClassName('dynamicTextarea');
-    // const container = document.querySelector('.header-paper-custom');
-
-    // textarea.addEventListener('input', () => {
-    // textarea.style.height = 'auto';
-    // textarea.style.height = textarea.scrollHeight + 'px';
-    // container.style.height = textarea.scrollHeight + 'px';
-    // });
-
     const textareas = document.querySelectorAll('.dynamicTextarea');
-const innerDivs = document.querySelectorAll('.inner-div');
+    const innerDivs = document.querySelectorAll('.inner-div');
 
-textareas.forEach((textarea, index) => {
-  textarea.addEventListener('input', () => {
-    textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
-    
-    innerDivs[index].style.width = (innerDivs[index].offsetWidth + 2) + 'px';
-  });
-});
+    textareas.forEach((textarea, index) => {
+    textarea.addEventListener('input', () => {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+        
+        innerDivs[index].style.width = (innerDivs[index].offsetWidth + 2) + 'px';
+    });
+    });
 </script>
 </body>
 </html>
