@@ -681,56 +681,69 @@
 
                 <div id="layout-paper" style="width: 100%; padding: 0px; overflow: hidden; height: 900px;">
                     <div class=" layout-paper">
-                        <div id="layoutrow1" style="width: 100%; display: none;">
-                            <div style="width: 100%;background-image: linear-gradient(white,rgb(246, 246, 142));border: 1px solid black;" >
-                                <h2 style="border-right: 5px solid rgb(255, 23, 62); border-left: 5px solid rgb(255, 23, 62); margin-bottom: 0px; margin: 2px 0;"><textarea class="dynamicTextarea"  name="" id="" style="resize: none; overflow: hidden; width: 100%;text-align: center; background-color: transparent; border: none; outline: none;resize: none; font-size: 20px;" cols="30" rows="2" placeholder="HEADER"></textarea></h2>
-                            </div>
-                            <div style="display: flex;">                         
-                                <div style="width: 25%;">
-                                    <textarea class="dynamicTextarea"  name="" style="resize: none; overflow: hidden;  border: none; outline: none; font-size:10px; text-align: start;width: 100%;" id="" cols="30" rows="20" placeholder="hey"></textarea>
-                                </div>
-                                <div style="width: 25%;">
-                                    <div style="display: flex; width: 100%;">
-                                        <div style="width: 50%;">
-                                            <textarea class="dynamicTextarea"  name="" id="" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="5" placeholder="hey"></textarea>
-                                        </div>
-                                        <div style="width: 50%;">
-                                            <textarea class="dynamicTextarea"  name="" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="5" placeholder="hey"></textarea>
-                                        </div>
-                                    </div>
-                                    <div style="display: flex; width: 100%;">
-                                        <div class="photo-div" style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
+
+                        <div id="layoutrow1" style="width: 100%;">
+                            <table style="width: 100%;background: linear-gradient(to bottom, #ffd500, #faf56c);border: 1px solid black;">
+                                <tr>
+                                    <td style="border-right: 5px solid rgb(255, 23, 62); border-left: 5px solid rgb(255, 23, 62); margin-bottom: 0px; margin: 2px 0;">
+                                        <input type="text" class="dynamicInput" name="" id="" style="width: 100%; text-align: center; background-color: transparent; border: none; outline: none; font-size: 20px; height: auto;" placeholder="HEADER" value="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="width: 25%;">
+                                        <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
+                                    </td>
+                                    <td style="width: 25%;">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td style="width: 50%;">
+                                                    <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
+                                                </td>
+                                                <td style="width: 50%;">
+                                                    <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
                                             <label for="file-input16" id="label16" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
                                             <img id="preview-image16" style="width: 100%;max-height: 100%;" src="" alt="logo">
                                         </div>
-                                        <input id="file-input16" type="file" style="display: none;" onchange="previewPhoto('file-input16', 'preview-image16', 'label16')">  
-                                    </div>
-                                    <div style="display: flex; width: 100%;">
-                                        <div style="width: 50%;">
-                                            <textarea class="dynamicTextarea"  name="" id="" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="8" placeholder="hey"></textarea>
-                                        </div>
-                                        <div style="width: 50%;">
-                                            <textarea class="dynamicTextarea"  name="" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" id="" cols="30" rows="8" placeholder="hey"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style="width: 25%;">
-                                    <textarea class="dynamicTextarea"  name="" id="" cols="30" rows="20" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
-                                </div>
-                                <div style="width: 25%;">
-                                    <textarea class="dynamicTextarea"  name="" id="" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" cols="30" rows="20" placeholder="hey"></textarea>
-                                </div>
-                            </div>
+                                        <input id="file-input16" type="file" style="display: none;" onchange="previewPhoto('file-input16', 'preview-image16', 'label16')">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td style="width: 50%;">
+                                                    <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
+                                                </td>
+                                                <td style="width: 50%;">
+                                                    <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="width: 25%;">
+                                        <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ">
+                                    </td>
+                                    <td style="width: 25%;">
+                                        <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and ">
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="layoutrow2" style="width: 100%; display: none;">
+                        <div id="layoutrow2" style="width: 100%;">
                             <div style="display: flex;" >
                                 <div style="width: 60%;">
-                                    <div style="width: 100%;">
-                                        <span ><textarea class="dynamicTextarea"  name="" id="" style="resize: none; overflow: hidden; border: none; outline: none;  text-align: center;width: 100%;font-size: 20px;" cols="30" rows="2" placeholder="HEADER"></textarea>
-                                        </span>
-                                    </div>
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 100%;border: 1px solid black;">
+                                                <input type="text" class="dynamicInput" name="" id="" style="width: 100%; text-align: center; background-color: transparent; border: none; outline: none; font-size: 20px; height: auto;" placeholder="HEADER" value="">
+                                            </td>
+                                        </tr>
+                                    </table>
                                     <div style="display: flex;">
+                                        
                                         <div style="width: 70%;">
                                                 <div style="width: 100%;display: flex;">
                                                     <textarea class="dynamicTextarea"  name="" id="" cols="30" rows="5" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>
@@ -754,10 +767,13 @@
                                     </div>
                                 </div>
                                 <div style="width: 40%;">
-                                    <div style="width: 100%;">
-                                        <span><textarea class="dynamicTextarea"  name="" id="" cols="30" style="resize: none; overflow: hidden; border: none; outline: none; text-align: center;width: 100%;font-size: 20px;" rows="2" placeholder="HEADER"></textarea>
-                                        </span>
-                                    </div>
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 100%;border: 1px solid black;">
+                                                <input type="text" class="dynamicInput" name="" id="" style="width: 100%; text-align: center; background-color: transparent; border: none; outline: none; font-size: 20px; height: auto;" placeholder="HEADER" value="">
+                                            </td>
+                                        </tr>
+                                    </table>
                                     <div style="display: flex;">
                                         <div style="width: 50%;">
                                             <textarea class="dynamicTextarea"  name="" id="" cols="30" rows="17" style="resize: none; overflow: hidden; border: none; outline: none; font-size: 10px; text-align: start;width: 100%;" placeholder="hey"></textarea>              
