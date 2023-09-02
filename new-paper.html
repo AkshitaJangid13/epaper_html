@@ -319,32 +319,42 @@
                     </div>
 
                     <div id="secondheaderpaper" style="width: 100%; padding: 0px;">
-                        <div id="secondheader-paper1" style="width: 100%; border-bottom: 2px solid black; display: none;">
-                            <div style="display: flex; padding: 3px; align-items: baseline;">
-                                <div style="width: 10%; padding: 0; display: flex; justify-content: center;">
-                                    <strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
-                                </div>
-                                <div style="width: 60%;">
-                                    <span style="display: flex; justify-content: start;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong></span></span>
-                                </div>
-                                <div style="width: 30%;">
-                                    <span style="display: flex; justify-content: end;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25"> </span>
-                                </div>
-                            </div>
+                        <div id="secondheader-paper1" style=" display: none;">
+                            <table style=" padding: 3px;width: 100%; border-bottom: 2px solid black;">
+                                <tr>
+                                    <td style="width: 20%; padding: 0;height: 20px;">
+                                        <strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
+                                    </td>
+                                    <td style="width: 25%;height: 20px;">
+                                        <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30">
+                                    </td>
+                                    <td style="width: 25%;height: 20px;">
+                                        <strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong>
+                                    </td>
+                                    <td style="width: 30%;height: 20px;">
+                                        <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25">
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="secondheader-paper2" style="width: 100%; border-bottom: 4px solid rgb(247, 166, 5); display: none;">
-                            <div style="display: flex; padding-top: 3px; align-items: baseline;">
-                                <div style="width: 7%; padding: 0; display: flex; justify-content: center;background-color: rgb(247, 166, 5); margin-bottom: 0;">
-                                    <span style="padding: 2px;"><strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong></span>
-                                </div>
-                                <div style="width: 60%;">
-                                    <span style="display: flex; justify-content: start;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong></span></span>
-                                </div>
-                                <div style="width: 30%;">
-                                    <span style="display: flex; justify-content: end;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25"> </span>
-                                </div>
-                            </div>
+                        <div id="secondheader-paper2" style="width: 100%;  display: none;">
+                            <table style=" padding: 3px;width: 100%; border-bottom: 4px solid rgb(247, 166, 5);">
+                                <tr>
+                                    <td style="width: 10%; padding: 0;height: 20px;background-color: rgb(247, 166, 5);">
+                                        <strong><input type="text" style=" text-align: center; border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
+                                    </td>
+                                    <td style="width: 35%;height: 20px;">
+                                        <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30">
+                                    </td>
+                                    <td style="width: 25%;height: 20px;">
+                                        <strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong>
+                                    </td>
+                                    <td style="width: 30%;height: 20px;">
+                                        <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25">
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
                         <div id="secondheader-paper3" style="width: 100%; border-bottom: 4px solid purple; display: none;">
@@ -1694,31 +1704,41 @@
                                         <button style="background-color: rgb(225, 64, 64); color: white; border-radius: 5px; margin: 0 3px;border: none; padding: 5px 12px;" id="secondheader-remove">Remove</button>
                                     </div>
                                     <div style="width: 100%; cursor: pointer;  margin: 2% 0;" id="secondheaderbtn1"  onclick="showsecondHeader(1)">
-                                        <div style="display: flex; padding: 3px; align-items: baseline;">
-                                            <div style="width: 10%; padding: 0; display: flex; justify-content: center;">
-                                                <strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
-                                            </div>
-                                            <div style="width: 60%;">
-                                                <span style="display: flex; justify-content: start;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong></span></span>
-                                            </div>
-                                            <div style="width: 30%;">
-                                                <span style="display: flex; justify-content: end;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25"> </span>
-                                            </div>
-                                        </div>
+                                        <table style=" padding: 3px;width: 100%; border-bottom: 2px solid black;">
+                                            <tr>
+                                                <td style="width: 20%; padding: 0;height: 20px;">
+                                                    <strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
+                                                </td>
+                                                <td style="width: 25%;height: 20px;">
+                                                    <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30">
+                                                </td>
+                                                <td style="width: 25%;height: 20px;">
+                                                    <strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong>
+                                                </td>
+                                                <td style="width: 30%;height: 20px;">
+                                                    <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25">
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer; margin: 2% 0; " id="secondheaderbtn2" onclick="showsecondHeader(2)">
-                                        <div style="display: flex; padding-top: 3px; align-items: baseline;">
-                                            <div style="width: 7%; padding: 0; display: flex; justify-content: center;background-color: rgb(247, 166, 5); margin-bottom: 0;">
-                                                <span style="padding: 2px;"><strong><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong></span>
-                                            </div>
-                                            <div style="width: 60%;">
-                                                <span style="display: flex; justify-content: start;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong></span></span>
-                                            </div>
-                                            <div style="width: 30%;">
-                                                <span style="display: flex; justify-content: end;"><input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25"> </span>
-                                            </div>
-                                        </div>
+                                        <table style=" padding: 3px;width: 100%; border-bottom: 4px solid rgb(247, 166, 5);">
+                                            <tr>
+                                                <td style="width: 10%; padding: 0;height: 20px;background-color: rgb(247, 166, 5);">
+                                                    <strong><input type="text" style=" text-align: center; border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="01" maxlength="3"></strong>
+                                                </td>
+                                                <td style="width: 35%;height: 20px;">
+                                                    <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30">
+                                                </td>
+                                                <td style="width: 25%;height: 20px;">
+                                                    <strong><input type="text" name="" id="" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;" placeholder="संपादकीय" maxlength="20"> </strong>
+                                                </td>
+                                                <td style="width: 30%;height: 20px;">
+                                                    <input type="text" style=" border: none; outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: 20px;" placeholder="Channel name" maxlength="25">
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer; margin: 2% 0; " id="secondheaderbtn3" onclick="showsecondHeader(3)">
