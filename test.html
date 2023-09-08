@@ -1,90 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.container {
-  border: 1px solid black;
-  padding: 10px;
-  display: inline-block; /* Adjust display property as needed */
-  overflow: hidden; /* Hide scrollbar */
-}
 
-#dynamicTextarea {
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  resize: none; /* Disable textarea resizing */
-  overflow: hidden; /* Hide textarea scrollbar */
-}
-</style>
 </head>
 <body>
-<div id="layoutrow1" style="width: 100%; display: block;">
-    <table style="width: 100%;background: linear-gradient(to bottom, #ff0000, #0000ff);border: 1px solid black;">
-        <tr>
-            <td style="border-right: 5px solid rgb(255, 23, 62); border-left: 5px solid rgb(255, 23, 62); margin-bottom: 0px; margin: 2px 0;">
-                <input type="text" class="dynamicInput" name="" id="" style="width: 100%; text-align: center; background-color: transparent; border: none; outline: none; font-size: 20px; height: auto;" placeholder="HEADER" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-            </td>
-        </tr>
-    </table>
-    <table style="width: 100%;">
-        <tr>
-            <td style="width: 25%;">
-                <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-            </td>
-            <td style="width: 25%;">
-                <table style="width: 100%;">
-                    <tr>
-                        <td style="width: 50%;">
-                            <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-                        </td>
-                        <td style="width: 50%;">
-                            <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-                        </td>
-                    </tr>
-                </table>
-                <div style="width: 100%;height: 100px;justify-content: center;align-items: center;background-color: rgb(248, 240, 242);">
-                    <label for="file-input16" id="label16" style="background-color: #0d6efd; border-radius: 3px; padding:3px 6px ; color: white;">Photo</label>
-                    <img id="preview-image16" style="width: 100%;max-height: 100%;" src="" alt="logo">
-                </div>
-                <input id="file-input16" type="file" style="display: none;" onchange="previewPhoto('file-input16', 'preview-image16', 'label16')">
-                <table style="width: 100%;">
-                    <tr>
-                        <td style="width: 50%;">
-                            <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-                        </td>
-                        <td style="width: 50%;">
-                            <input type="text" class="dynamicInput" name="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" id="" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td style="width: 25%;">
-                <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ">
-            </td>
-            <td style="width: 25%;">
-                <input type="text" class="dynamicInput" name="" id="" style="border: none; outline: none; font-size: 10px; text-align: start;width: 100%; height: auto;" placeholder="hey" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and ">
-            </td>
-        </tr>
-    </table>
-</div>
-<div class="container">
-  <textarea id="dynamicTextarea" placeholder="Type something..."
-  >
-  </textarea>
-</div>
+    <div id="Subheader-paper" style="width: 100%; padding: 0px;">
+        <div id="subheader-paper1" style="display: none;">
+            <table style="padding: 3px; background-color: #0d6efd; width: 100%;">
+                <tr>
+                    <td style="width: 50%; height: 20px;">
+                        <span ><input type="text" style="border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;font-size: medium;" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></span>
+                    </td>
+                    <td style="width: 50%; height: 20px;">
+                        <span><input type="text" style="border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;text-align: end;font-size: medium;" placeholder="वर्ष- १, अंक २0 ,पृष्ठ 0२"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-<script>
-const textarea = document.getElementById('dynamicTextarea');
-const container = document.querySelector('.container');
+        <div id="subheader-paper2" style="display:none ;">
+            <table style="padding: 1px; border-bottom: 1px solid black;border-top: 1px solid black;">
+                <tr>
+                    <td style="width: 25%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></span>
+                    </td>
+                    <td style="width: 8.3%;padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="वर्ष- १" maxlength="10"></span>
+                    </td>
+                    <td style="width: 8.3%;padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="अंक २0" maxlength="10"></span>
+                    </td>
+                    <td  style="width: 8.3%;padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></span>
+                    </td>
+                    <td style="width: 25%;padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="abc@gmail.com" maxlength="30"></span>
+                    </td>
+                    <td  style="width: 25%;padding: 0; height: 20px;">
+                        <span ><input type="text" style="font-size:medium;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="wwww.website.com" maxlength="40"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-textarea.addEventListener('input', () => {
-  textarea.style.height = 'auto';
-  textarea.style.height = textarea.scrollHeight + 'px';
-  container.style.height = textarea.scrollHeight + 10 + 'px'; // Adjust padding
-});
-</script>
+        <div id="subheader-paper3" style="display: none;">
+            <table style="padding: 1px; border-bottom: 1px solid black;border-top: 1px solid black; background-color: rgb(248, 248, 167);">
+                <tr>
+                    <td style="width: 25%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></span>
+                    </td>
+                    <td  style="width: 8.3%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="वर्ष- १" maxlength="10">
+                    </td>
+                    <td  style="width: 8.3%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="अंक २0" maxlength="10"></span>
+                    </td>
+                    <td style="width: 8.3%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></span>
+                    </td>
+                    <td  style="width: 25%; padding: 0;border-right: 1px solid black; height: 20px;">
+                        <span ><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="abc@gmail.com" maxlength="30"></span>
+                    </td>
+                    <td  style="width: 25%; padding: 0; height: 20px;">
+                        <span ><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="wwww.website.com" maxlength="40"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="subheader-paper4" style="display: none;padding-top: 10px;">
+            <table style="padding: 1px; border-bottom: 1px solid black;border-top: 1px solid black; background-color: #f3d4ae">
+                <tr>
+                    <td style="width: 33.33%; padding: 0;border-right: 1px solid black; height: 10px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></span>
+                    </td>
+                    <td style="width: 8.25%; padding: 0;border-right: 1px solid black;height: 10px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="वर्ष- १" maxlength="10"></span>
+                    </td>
+                    <td style="width: 8.25%; padding: 0;border-right: 1px solid black;height: 10px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="अंक २0" maxlength="10"></span>
+                    </td>
+                    <td  style="width: 8.25%; padding: 0;border-right: 1px solid black;height: 10px;">
+                        <span ><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></span>
+                    </td>
+                    <td  style="width: 8.25%; padding: 0;border-right: 1px solid black;height: 30px;">
+                        <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
+                            <label for="file-input14" id="label14" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
+                            <img id="preview-image14" style="width: 100%;max-height: 100%;" src="" alt="logo">
+                        </div>
+                        <input id="file-input14" type="file" style="display: none;" onchange="previewPhoto('file-input14', 'preview-image14', 'label14')">  
+                    </td>
+                    <td  style="width: 33.33%; padding: 0;height: 10px;">
+                        <span><input type="text" style="font-size: small;text-align: center; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="wwww.website.com" maxlength="40"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="subheader-paper5" style="display:none ;">
+            <table style="padding: 1px;padding-top: 10px; width: 100%;">
+                <tr>
+                    <td style="padding: 0;height: 30px;width: 10%; height: 20px;">
+                        <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
+                            <label for="file-input15" id="label15" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
+                            <img id="preview-image15" style="width: 100%;max-height: 100%;" src="" alt="logo">
+                        </div>
+                        <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
+                    </td>
+                    <td style="width: 90%; background-color: rgb(113, 125, 136); height: 20px; padding: 0px 10px;">
+                        <span><input type="text"  name="" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="subheader-paper6" style="display:none ;">
+            <table style="padding: 0px;background-color: rgb(151, 167, 182); width: 100%;">
+                <tr>
+                    <td style="width: 50%; height: 20px;padding: 3px 8px;">
+                        <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                    </td>
+                    <td style="width: 50%; height: 20px;padding: 3px 8px; ">
+                        <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder=" वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="subheader-paper7" style="display:none ;">
+            <table  style="border: 1px solid black; margin: 1px; width: 100%;">
+                <tr>
+                    <td  style="width: 33.33%; height: 20px;">
+                        <span ><input type="text" style="font-size: small; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
+                    </td>
+                    <td style="width: 33.33%; height: 20px;">
+                        <span ><input type="text" style="font-size: small; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                    </td>
+                    <td style="width: 33.33%; height: 20px;">
+                        <span ><input type="text" style="font-size: small; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="subheader-paper8" style="display:none ;">
+            <table style="padding: 0px;background-color:  rgb(220,53,69); width: 100%;">
+                <tr>
+                    <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                        <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                    </td>
+                    <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                        <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                    </td>
+                    <td style="width: 33.33%; height: 20px;padding: 3px 8px; ">
+                        <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="www.website.com" maxlength="80"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
 </body>
 </html>

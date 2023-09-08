@@ -678,58 +678,66 @@
                             </table>
                         </div>
 
-                        <div id="subheader-paper5" style="display: none;">
-                            <div style="display: flex;align-items: center; padding: 2px;padding-top: 10px;">
-                                <div style="padding: 0;height: 30px;width: 10%;">
-                                    <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
-                                        <label for="file-input15" id="label15" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
-                                        <img id="preview-image15" style="width: 100%;max-height: 100%;" src="" alt="logo">
-                                    </div>
-                                    <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
-                                </div>
-                                <div style="width: 90%; background-color: rgb(151, 167, 182);">
-                                    <span class="mb-0 py-1"><input type="text"  name="" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
-                                </div>
-                            </div>
+                        <div id="subheader-paper5" style="display:none ;">
+                            <table style="padding: 1px;padding-top: 10px; width: 100%;">
+                                <tr>
+                                    <td style="padding: 0;height: 30px;width: 10%; height: 20px;">
+                                        <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
+                                            <label for="file-input15" id="label15" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
+                                            <img id="preview-image15" style="width: 100%;max-height: 100%;" src="" alt="logo">
+                                        </div>
+                                        <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
+                                    </td>
+                                    <td style="width: 90%; background-color: rgb(113, 125, 136); height: 20px; padding: 0px 10px;">
+                                        <span><input type="text"  name="" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="subheader-paper6" style="display: none;">
-                            <div style="display: flex;align-items: center; padding: 0px;padding-top: 10px;background-color: rgb(151, 167, 182);">
-                                <div style="width: 50%;">
-                                    <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
-                                </div>
-                                <div style="width: 50%;">
-                                    <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder=" वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
-                                </div>
-                            </div>
+                        <div id="subheader-paper6" style="display:none ;">
+                            <table style="padding: 0px;background-color: rgb(151, 167, 182); width: 100%;">
+                                <tr>
+                                    <td style="width: 50%; height: 20px;padding: 3px 8px;">
+                                        <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                                    </td>
+                                    <td style="width: 50%; height: 20px;padding: 3px 8px; ">
+                                        <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder=" वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="subheader-paper7" style="display: none;">
-                            <div  style="display: flex; border: 1px solid black; align-items: center; margin: 1px;">
-                                <div  style="width: 33.33%;">
-                                    <span ><input type="text" style="border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
-                                </div>
-                                <div style="width: 33.33%;">
-                                    <span ><input type="text" style="text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
-                                </div>
-                                <div style="width: 33.33%;">
-                                    <span ><input type="text" style="text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
-                                </div>
-                            </div>
+                        <div id="subheader-paper7" style="display:none ;">
+                            <table  style="border: 1px solid black; margin: 1px; width: 100%;">
+                                <tr>
+                                    <td  style="width: 33.33%; height: 20px;">
+                                        <span ><input type="text" style="font-size: small; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
+                                    </td>
+                                    <td style="width: 33.33%; height: 20px;">
+                                        <span ><input type="text" style="font-size: small; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                                    </td>
+                                    <td style="width: 33.33%; height: 20px;">
+                                        <span ><input type="text" style="font-size: small; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="subheader-paper8" style="display: none;">
-                            <div  style="display: flex; background-color: rgb(220,53,69); align-items: center; margin: 1px;">
-                                <div  style="width: 33.33%;">
-                                    <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
-                                </div>
-                                <div style="width: 33.33%;">
-                                    <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
-                                </div>
-                                <div style="width: 33.33%;">
-                                    <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
-                                </div>
-                            </div>
+                        <div id="subheader-paper8" style="display:none ;">
+                            <table style="padding: 0px;background-color:  rgb(220,53,69); width: 100%;">
+                                <tr>
+                                    <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                                        <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                                    </td>
+                                    <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                                        <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                                    </td>
+                                    <td style="width: 33.33%; height: 20px;padding: 3px 8px; ">
+                                        <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="www.website.com" maxlength="80"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -2113,57 +2121,65 @@
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer;  margin: 2% 0; " id="subheaderbtn5" onclick="showsubHeader(5)">
-                                        <div style="display: flex;align-items: center; padding: 2px;padding-top: 10px;">
-                                            <div style="padding: 0;height: 30px;width: 10%;">
-                                                <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
-                                                    <label for="file-input15" id="label15" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
-                                                    <img id="preview-image15" style="width: 100%;max-height: 100%;" src="" alt="logo">
-                                                </div>
-                                                <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
-                                            </div>
-                                            <div style="width: 90%; background-color: rgb(151, 167, 182);">
-                                                <span class="mb-0 py-1"><input type="text"  name="" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
-                                            </div>
-                                        </div>
+                                        <table style="padding: 1px;padding-top: 10px; width: 100%;">
+                                            <tr>
+                                                <td style="padding: 0;height: 30px;width: 10%; height: 20px;">
+                                                    <div class="photo-div" style="height: 50px;z-index: 100;position: relative;margin-top: -5px;">
+                                                        <label for="file-input15" id="label15" style="background-color: #0d6efd; padding: 3px 6px;border-radius: 4px;">Photo</label>
+                                                        <img id="preview-image15" style="width: 100%;max-height: 100%;" src="" alt="logo">
+                                                    </div>
+                                                    <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
+                                                </td>
+                                                <td style="width: 90%; background-color: rgb(113, 125, 136); height: 20px; padding: 0px 10px;">
+                                                    <span><input type="text"  name="" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer;  margin: 2% 0; " id="subheaderbtn6" onclick="showsubHeader(6)">
-                                        <div style="display: flex;align-items: center; padding: 0px;padding-top: 10px;background-color: rgb(151, 167, 182);">
-                                            <div style="width: 50%;">
-                                                <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
-                                            </div>
-                                            <div style="width: 50%;">
-                                                <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder=" वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
-                                            </div>
-                                        </div>
+                                        <table style="padding: 0px;background-color: rgb(151, 167, 182); width: 100%;">
+                                            <tr>
+                                                <td style="width: 50%; height: 20px;padding: 3px 8px;">
+                                                    <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                                                </td>
+                                                <td style="width: 50%; height: 20px;padding: 3px 8px; ">
+                                                    <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder=" वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer;  margin: 2% 0; " id="subheaderbtn7" onclick="showsubHeader(7)">
-                                        <div  style="display: flex; border: 1px solid black; align-items: center; margin: 1px;">
-                                            <div  style="width: 33.33%;">
-                                                <span ><input type="text" style="border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
-                                            </div>
-                                            <div style="width: 33.33%;">
-                                                <span ><input type="text" style="text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
-                                            </div>
-                                            <div style="width: 33.33%;">
-                                                <span ><input type="text" style="text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
-                                            </div>
-                                        </div>
+                                        <table  style="border: 1px solid black; margin: 1px; width: 100%;">
+                                            <tr>
+                                                <td  style="width: 33.33%; height: 20px;">
+                                                    <span ><input type="text" style="font-size: small; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
+                                                </td>
+                                                <td style="width: 33.33%; height: 20px;">
+                                                    <span ><input type="text" style="font-size: small; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                                                </td>
+                                                <td style="width: 33.33%; height: 20px;">
+                                                    <span ><input type="text" style="font-size: small; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
 
                                     <div style="width: 100%; cursor: pointer;  margin: 2% 0; " id="subheaderbtn8" onclick="showsubHeader(8)">
-                                        <div  style="display: flex; background-color: rgb(220,53,69); align-items: center; margin: 1px;">
-                                            <div  style="width: 33.33%;">
-                                                <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></span>
-                                            </div>
-                                            <div style="width: 33.33%;">
-                                                <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
-                                            </div>
-                                            <div style="width: 33.33%;">
-                                                <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" name="" id="" placeholder="www.website.com" maxlength="30"></span>
-                                            </div>
-                                        </div>
+                                        <table style="padding: 0px;background-color:  rgb(220,53,69); width: 100%;">
+                                            <tr>
+                                                <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                                                    <span ><input type="text"  name="" style="color: white;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="Date- Sunday 29 june 2023" maxlength="80"></span>
+                                                </td>
+                                                <td style="width: 33.33%; height: 20px;padding: 3px 8px;">
+                                                    <span style="margin-bottom: 0; padding: 2px 0;"><input type="text" style="color: white; text-align: center;border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;"  name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></span>
+                                                </td>
+                                                <td style="width: 33.33%; height: 20px;padding: 3px 8px; ">
+                                                    <span ><input type="text"  name="" style="color: white;text-align: end; border: none;outline: none;font-weight: 700;width: 100%;background-color: transparent;" id="" placeholder="www.website.com" maxlength="80"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div> 
